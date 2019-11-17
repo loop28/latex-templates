@@ -1,0 +1,112 @@
+%
+% README
+% ======
+%
+% Umsetzung eines wöchentlichen Ausbildungsnachweises auf Basis der
+% Ausbildungsnachweisvorlage der IHK Stuttgart in LaTeX.
+%
+% Dass der Nachweis bei zu viel Text nicht mehr auf eine Seite passt, ist als
+% Feature zu verstehen und verhindert das Überladen des Nachweises.
+%
+% Diese Vorlage wurde mit PDFLaTeX getestet.
+%
+% LICENSE
+% =======
+%
+% Copyright (c) 2019 Elias Mardaus <e.mardaus@runbox.com>
+%
+% Permission to use, copy, modify, and distribute this software for any
+% purpose with or without fee is hereby granted, provided that the above
+% copyright notice and this permission notice appear in all copies.
+%
+% THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+% WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+% MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+% ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+% WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+% ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+% OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+%
+\documentclass[10pt,a4paper]{article}
+\pagestyle{empty}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\author{}
+\date{}
+%
+% Die fortlaufende Nummer der Ausbildungsnachweise.
+%
+\title{Ausbildungs- und Tätigkeitsnachweis Nr.: X}
+\begin{document}
+\maketitle
+%
+% Daten zum Ausbildungsnachweis und dem Auszubildenden selbst.
+%
+\begin{tabular}{l|l}
+  Name des Auszubildenden: & Vorname Nachname\\
+  Ausbildungsjahr: & X\\
+  Ausbildungswoche: & X\\
+  Ausbildungswoche von - bis: & XX.XX.XXXX - XX.XX.XXXX\\
+\end{tabular}
+\\
+\\\\
+%
+% Inhalt des Ausbildungsnachweises (Tag, Datum, Tätigkeiten).
+%
+\begin{tabular}{l l p{9cm} l}
+  %
+  % Tabellenüberschrift.
+  %
+  Tag: &  Datum: &  Tätigkeiten:\\
+  \firsthline\\
+  %
+  % Bei Tätigkeiten außerhalb der Berufsschule "Vorlesung" und "Dozent durch
+  % die jeweilig zutreffenden Orte und Personen erstetzen (z.B. "Betrieb" und
+  % "Ausbilder").
+  %
+  % Montag.
+  %
+  Mo. & XX.XX.XXXX & Vorlesung / Dozent:\newline
+    Vormittag: TODO.\newline
+    Nachmittag: TODO.\\\\
+  %
+  % Dienstag.
+  %
+  Di. & XX.XX.XXXX & Vorlesung / Dozent:\newline
+    Vormittag: TODO.\newline
+    Nachmittag: TODO.\\\\
+  %
+  % Mittwoch.
+  %
+  Mi. & XX.XX.XXXX & Vorlesung / Dozent:\newline
+    Vormittag: TODO.\newline
+    Nachmittag: TODO.\\\\
+  %
+  % Donnerstag.
+  %
+  Do. & XX.XX.XXXX & Vorlesung / Dozent:\newline
+    Vormittag: TODO.\newline
+    Nachmittag: TODO.\\\\
+  %
+  % Freitag.
+  %
+  % (Falls nachmittägliche Tätigkeiten stattgefunden haben einfach wie
+  % an den anderen Tagen eintragen und dabei die "newline" und "\\" Statements
+  % nicht vergessen).
+  %
+  Fr. & XX.XX.XXXX & Vorlesung / Dozent:\newline
+    Vormittag: TODO.\\
+\end{tabular}
+\\
+\\\\
+Durch die nachfolgende Unterschrift wird die Richtigkeit und Vollständigkeit der obigen Angaben bestätigt.
+\\
+\\\\
+%
+% Felder für die Unterschriften.
+%
+\begin{tabular}{l p{3cm} l l}
+  &&\\ \cline{1-1} \cline{3-3}
+  \scriptsize Datum, Unterschrift Auszubildender &&  \scriptsize Datum, Unterschrift Ausbilder\\
+\end{tabular}
+\end{document}
